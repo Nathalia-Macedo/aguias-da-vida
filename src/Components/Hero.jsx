@@ -137,7 +137,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="relative min-h-screen flex items-center">
+    <section className="relative min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -149,7 +149,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 flex items-center min-h-screen">
+      <div className="relative z-10 container mx-auto px-4 pt-32">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
           {/* Left Column */}
           <div className="w-full lg:w-5/12 text-white space-y-8 lg:pl-8">
@@ -185,8 +185,8 @@ const Hero = () => {
           </div>
 
           {/* Right Column */}
-          <div className="w-full lg:w-6/12 flex items-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+          <div className="w-full lg:w-6/12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 lg:mt-32">
               {services.map((service, index) => (
                 <Link key={index} to={service.link}>
                   <motion.div
@@ -211,3 +211,4 @@ const Hero = () => {
 }
 
 export default Hero
+
